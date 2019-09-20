@@ -36,7 +36,7 @@ public class VendingForm extends javax.swing.JFrame
     private double totalAmount;
 
     private final ArrayList<ProductListing> productList = new ArrayList<>();
-    final String FILE_NAME = "src\\com\\org\\example\\file\\historical_sales.txt";
+    final String FILE_NAME = "historical_sales.txt";
     private static double cashAmount = 0.0;
 
     public VendingForm() throws Exception {
@@ -858,14 +858,12 @@ public class VendingForm extends javax.swing.JFrame
                 System.out.format("%s%n", file.createNewFile() ?
                         "File successfully created." : "File creation was unsuccessful.");
             }
-            else
-            {
-                writeFile = new BufferedWriter( new FileWriter(FILE_NAME, true));
+            
+            writeFile = new BufferedWriter(new FileWriter(FILE_NAME, true));
 
-                writeFile.append(String.format("%s%s of %tB  %tY, %tl:%tM %tp%n%n%s%14s%n%s%n",
-                        "Historical Sales for: ", getOrdinalSuffix(calendar), calendar,
-                        calendar, calendar, calendar, calendar, "PRODUCT NAME", "QUANTITY", getSalesData()));
-            }
+            writeFile.append(String.format("%s%s of %tB  %tY, %tl:%tM %tp%n%n%s%14s%n%s%n",
+                    "Historical Sales for: ", getOrdinalSuffix(calendar), calendar,
+                    calendar, calendar, calendar, calendar, "PRODUCT NAME", "QUANTITY", getSalesData()));
         }
         catch(Exception ex){
             errorLog(ex);
