@@ -1,0 +1,62 @@
+Historical Sales for: 3rd of September  2019, 11:04 pm
+
+PRODUCT NAME      QUANTITY
+Chips             6
+Coke B            3
+Lays              12
+Tex               9
+Doritos           5
+Fanta             6
+
+Historical Sales for: 20th of September  2019, 4:03 am
+
+PRODUCT NAME      QUANTITY
+Doritos           1
+Peanuts           1
+Chips             8
+Bar One           9
+Lays              5
+Coke B            7
+Coke              2
+Fanta             3
+
+Historical Sales for: 1st of September  2019, 4:05 am
+
+PRODUCT NAME      QUANTITY
+Peanuts           8
+Fanta             16
+Chips             9
+Coke B            4
+Tex               2
+
+Historical Sales for: 2nd of September  2019, 4:08 am
+
+PRODUCT NAME      QUANTITY
+Fanta             4
+Peanuts           8
+Chips             9
+
+Historical Sales for: 2nd of September  2019, 4:10 am
+
+PRODUCT NAME      QUANTITY
+Fanta             6
+Chips             101
+
+Historical Sales for: 21st of September  2019, 4:12 am
+
+PRODUCT NAME      QUANTITY
+Tex               19
+
+Historical Sales for: 21st of September  2019, 4:12 am
+
+PRODUCT NAME      QUANTITY
+Fanta             4
+Peanuts           9
+Lays              6
+
+Historical Sales for: 21st of September  2019, 4:15 am
+
+PRODUCT NAME      QUANTITY
+Fanta             9
+Chips             7
+
