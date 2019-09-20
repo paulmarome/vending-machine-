@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Manase/Documents/NetBeansProjects/Vending/src/com/org/example/VendingForm.java</file>
+            <file>file:/C:/Users/Manase/Documents/NetBeansProjects/Vending/test/com/org/example/ProductListingNGTest.java</file>
+            <file>file:/C:/Users/Manase/Documents/NetBeansProjects/Vending/src/com/org/example/file/historical_sales.txt</file>
+            <file>file:/C:/Users/Manase/Documents/NetBeansProjects/Vending/src/com/org/example/ProductListing.java</file>
+        </group>
     </open-files>
 </project-private>

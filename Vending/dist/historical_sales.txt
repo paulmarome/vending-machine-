@@ -1,0 +1,10 @@
+Historical Sales for: 20th of September  2019, 4:46 am
+
+PRODUCT NAME      QUANTITY
+Chips             6
+Bar One           6
+Peanuts           4
+Lays              3
+Coke B            3
+Fanta             4
+
