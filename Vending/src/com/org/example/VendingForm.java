@@ -814,7 +814,7 @@ public class VendingForm extends javax.swing.JFrame
             String currentItem = productName.getProduct();
 
             /*
-             * Note: The below code fragment can't be simplified by
+             * Note: The below code fragment can be simplified by
              *       omitting the conditional 'if' statement.
              *
              * As in: items.add(currentItem);
