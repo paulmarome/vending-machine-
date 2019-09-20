@@ -933,7 +933,7 @@ public class VendingForm extends javax.swing.JFrame
             {
                 case 1:
                 case 21:
-                case 31:return String.format("%s%s", formatDay, "st");
+                case 31: return String.format("%s%s", formatDay, "st");
                 case 2:
                 case 22: return String.format("%s%s", formatDay, "nd");
                 case 3:
