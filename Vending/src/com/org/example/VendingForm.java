@@ -904,8 +904,9 @@ public class VendingForm extends javax.swing.JFrame
     private static void errorLog(Exception exception)
     {
         StackTraceElement[] logError = exception.getStackTrace();
+        String format = "%-59s%-43s%-14s%-14s%n";
 
-        System.out.printf("%-59s%-43s%-14s%-14s%n",
+        System.out.printf(format,
                 "CLASS", "FILE", "LINE", "METHOD");
 
         int bound = logError.length;
@@ -914,7 +915,7 @@ public class VendingForm extends javax.swing.JFrame
 
         while (index < bound)
         {
-            System.out.printf("%-59s%-43s%-14s%-14s%n",
+            System.out.printf(format,
                     logError[index].getClassName(),
                     logError[index].getFileName(),
                     logError[index].getLineNumber(),
