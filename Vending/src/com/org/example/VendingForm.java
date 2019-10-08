@@ -507,7 +507,7 @@ public class VendingForm extends javax.swing.JFrame
                  *  Either change one of the variable names for "Coke B" or "Coke",
                  *  ensuring that each has a different sequence of starting characters.
                  *  The best overall solution is to use the <code>equals</code> method to
-                 *  equality between the two strings.
+                 *  check for equality between the two strings.
                  *
                  */
 
