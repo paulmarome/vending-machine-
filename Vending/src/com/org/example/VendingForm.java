@@ -16,17 +16,10 @@ import java.util.regex.Pattern;
 public class VendingForm extends javax.swing.JFrame
 {
     //Do not delete or change!
-    private final double[] price =
-            {
-                    10, 7.5, 11.99, 7.5, 22.98, 6.5, 6.5, 11.99, 12.0
-            };
+    private final double[] price = { 10, 7.5, 11.99, 7.5, 22.98, 6.5, 6.5, 11.99, 12.0 };
 
     //Do not delete or change!
-    private final String[] product =
-            {
-                    "Coke B", "Chips", "Bar One", "Lays", "Peanuts", "Fanta",
-                    "Coke", "Tex", "Doritos"
-            };
+    private final String[] product = { "Coke B", "Chips", "Bar One", "Lays", "Peanuts", "Fanta","Coke", "Tex", "Doritos" };
 
     private String columnHeading;
 
@@ -421,7 +414,7 @@ public class VendingForm extends javax.swing.JFrame
         setLocationRelativeTo(null);
     }// </editor-fold>
     
-     private void displayColHeading() {
+     private void displayColumnHeadings() {
         columnHeading = String.format(" %s\t%s\t%s\t%s%n",
                 "ITEM", "PRICE", "QTY", "TOTAL");
         textArea.setFont(new Font("Cambria", Font.PLAIN, 12));
@@ -434,14 +427,11 @@ public class VendingForm extends javax.swing.JFrame
         });
     }
 
-    private double grandTotal()
-    {
-        return productList.stream().mapToDouble(a ->
-                a.getTotalAmount()).sum();
+    private double grandTotal() {
+        return productList.stream().mapToDouble(a -> a.getTotalAmount()).sum();
     }
 
-    private void setInsertedAmount(double amount)
-    {
+    private void setInsertedAmount(double amount) {
         cashAmount = amount + cashAmount;
         insertedCash.setText(" " + ProductListing.setCurrency(cashAmount));
     }
@@ -496,11 +486,7 @@ public class VendingForm extends javax.swing.JFrame
                  * Problem:
                  *
                  *  The above implementation for checking if an element is present within
-                 *  the {@code productList}, was error-prone. Each time the "bottle coke"
-                 *  (located at column 1, row 1) and "can coke" were individually clicked,
-                 *  the quantity was incremented for both items; "bottle coke" is assigned
-                 *  a variable named "Coke B" and "can coke" as "Coke".
-                 *  Since the <code>contains</code> method
+                 *  the {@code productList}, was error-prone.
                  *
                  * Solution:
                  *
@@ -516,9 +502,7 @@ public class VendingForm extends javax.swing.JFrame
                     int productQty = productList.get(index).getQuantity() + quantity;
                     double revisedAmount = itemPrice * productQty;
 
-                    productList.set(index, new ProductListing(item, itemPrice,
-                            productQty, revisedAmount));
-
+                    productList.set(index, new ProductListing(item, itemPrice, productQty, revisedAmount));
                     occurrence++;
                 }
             }
