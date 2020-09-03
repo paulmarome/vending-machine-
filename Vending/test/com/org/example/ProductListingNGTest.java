@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.org.example;
 
 import static org.testng.Assert.*;
@@ -18,24 +13,19 @@ import org.testng.annotations.Test;
  */
 public class ProductListingNGTest {
     
-    public ProductListingNGTest() {
-    }
+    public ProductListingNGTest() {}
 
     @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
+    public static void setUpClass() throws Exception {}
 
     @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
+    public static void tearDownClass() throws Exception {}
 
     @BeforeMethod
-    public void setUpMethod() throws Exception {
-    }
+    public void setUpMethod() throws Exception {}
 
     @AfterMethod
-    public void tearDownMethod() throws Exception {
-    }
+    public void tearDownMethod() throws Exception {}
 
     /**
      * Test of getProduct method, of class ProductListing.
@@ -45,10 +35,9 @@ public class ProductListingNGTest {
     {
         System.out.println("getProduct");
         ProductListing instance = null;
-        String expResult = "";
+        String expResult = "Coke";
         String result = instance.getProduct();
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
@@ -59,10 +48,9 @@ public class ProductListingNGTest {
     public void testGetPrice() {
         System.out.println("getPrice");
         ProductListing instance = null;
-        double expResult = 0.0;
+        double expResult = 10.0;
         double result = instance.getPrice();
-        assertEquals(result, expResult, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
+        assertEquals(result, expResult);
         fail("The test case is a prototype.");
     }
 
@@ -73,10 +61,9 @@ public class ProductListingNGTest {
     public void testGetQuantity() {
         System.out.println("getQuantity");
         ProductListing instance = null;
-        int expResult = 0;
+        int expResult = 1;
         int result = instance.getQuantity();
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
@@ -91,7 +78,6 @@ public class ProductListingNGTest {
         double expResult = 0.0;
         double result = instance.getTotalAmount();
         assertEquals(result, expResult, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
@@ -102,10 +88,9 @@ public class ProductListingNGTest {
     public void testSetCurrency() {
         System.out.println("setCurrency");
         double value = 0.0;
-        String expResult = "";
+        String expResult = "R10.00";
         String result = ProductListing.setCurrency(value);
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
@@ -119,7 +104,6 @@ public class ProductListingNGTest {
         String expResult = "";
         String result = instance.toString();
         assertEquals(result, expResult);
-        // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
     
